@@ -1,0 +1,11 @@
+.bg-custom {
+    background-color: #005792;
+}
+
+.shadow-custom {
+    box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.w-944 {
+    min-width: 944px;
+}

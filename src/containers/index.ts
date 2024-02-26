@@ -1,0 +1,6 @@
+export { default as Banner } from "./Banner"
+export { default as ProfileSections } from "./ProfileSection"
+export { default as SkillSections } from "./SkillSection"
+export { default as ProjectSections } from "./ProjectSection"
+export { default as ContactSections } from "./ContactSection"
+export { default as ServicesSections } from "./ServicesSection"

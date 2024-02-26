@@ -1,0 +1,11 @@
+.bg-custom-skyblue {
+    background-color: #92C7CF;
+}
+
+.w-800 {
+    width: 800px;
+}
+
+.shadow-custom {
+    box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.2);
+}

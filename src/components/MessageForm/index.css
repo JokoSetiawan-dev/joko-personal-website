@@ -1,0 +1,20 @@
+.bg-custom-skyblue {
+    background-color: #92C7CF !important;
+}
+
+.color-sft-grey {
+    background-color: #F2F1EB;
+}
+
+.shadow-custom {
+    box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.custom-height {
+    height: 100% !important;
+}
+
+.custom-img {
+    width: 25px;
+    height: auto;
+}
