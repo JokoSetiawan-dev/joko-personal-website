@@ -1,5 +1,5 @@
 import Navbar from "../../components/Navbar";
-import { Banner, ContactSections, ProfileSections, ProjectSections, SkillSections } from "../../containers";
+import { Banner, ProfileSections} from "../../containers";
 import ServicesSection from "../../containers/ServicesSection";
 
 const LandingPage = () => {

@@ -27,6 +27,8 @@ const MessageForm = () => {
     const { user_name, user_email, message } = values;
 
     const emailBody = `Name: ${user_name}\nEmail: ${user_email}\n\nMessage: ${message}`;
+    console.log(emailBody);
+    
 
     if (form.current) {
       const currentForm = form.current as HTMLFormElement;

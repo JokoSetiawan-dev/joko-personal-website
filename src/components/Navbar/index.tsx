@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import { HashLink as Link } from 'react-router-hash-link'
 import jsLogo from "../../assets/images/js-logo-black.svg";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
