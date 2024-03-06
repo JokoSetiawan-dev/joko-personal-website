@@ -9,7 +9,7 @@ const SkillSection = () => {
         <div className="lg:flex lg:flex-col lg:items-center lg:justify-evenly lg:min-h-500">
             <h1 className="lg:text-xl lg:font-bold">Skills</h1>
             <FrontendSkill/>
-            {/* <BackendSkill/> */}
+            <BackendSkill/>
         </div>
       </div>
     </>
