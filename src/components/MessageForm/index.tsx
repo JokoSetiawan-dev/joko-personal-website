@@ -27,7 +27,7 @@ const MessageForm = () => {
     const { user_name, user_email, message } = values;
 
     const emailBody = `Name: ${user_name}\nEmail: ${user_email}\n\nMessage: ${message}`;
-    console.log(emailBody);
+    console.error(emailBody);
     
 
     if (form.current) {

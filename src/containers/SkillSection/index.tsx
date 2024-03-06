@@ -6,10 +6,10 @@ const SkillSection = () => {
   return (
     <>
       <div id="skills">
-        <div className="flex flex-col items-center justify-evenly min-h-500">
-            <h1 className="text-xl font-bold">Skills</h1>
+        <div className="lg:flex lg:flex-col lg:items-center lg:justify-evenly lg:min-h-500">
+            <h1 className="lg:text-xl lg:font-bold">Skills</h1>
             <FrontendSkill/>
-            <BackendSkill/>
+            {/* <BackendSkill/> */}
         </div>
       </div>
     </>

@@ -4,7 +4,7 @@ import { MessageForm} from "../../components";
 const ContactSection = () => {
   return (
     <>
-      <div id="contacts" className="flex flex-row gap-7 min-h-96 justify-center items-center mt-28">
+      <div id="contacts" className="flex flex-row gap-7 min-h-96 justify-center items-center md:mt-28 mt-20">
         <div>
           <MessageForm/>
         </div>
