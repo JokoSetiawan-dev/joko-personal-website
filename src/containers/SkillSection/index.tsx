@@ -1,4 +1,4 @@
-import { FrontendSkill, BackendSkill } from "../../components";
+import { FrontendSkill, BackendSkill, SkillsAnimated } from "../../components";
 import "./index.css"
 
 
@@ -6,10 +6,13 @@ const SkillSection = () => {
   return (
     <>
       <div id="skills">
-        <div className="lg:flex lg:flex-col lg:items-center lg:justify-evenly lg:min-h-500">
-            <h1 className="lg:text-xl lg:font-bold">Skills</h1>
+        <div className=" flex-col items-center justify-evenly min-h-500 hidden">
+            <h1 className="text-xl font-bold">Skills</h1>
             <FrontendSkill/>
             <BackendSkill/>
+        </div>
+        <div>
+          <SkillsAnimated/>
         </div>
       </div>
     </>

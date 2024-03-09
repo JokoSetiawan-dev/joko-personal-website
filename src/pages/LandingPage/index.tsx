@@ -1,5 +1,5 @@
 import Navbar from "../../components/Navbar";
-import { Banner, ContactSections, ProfileSections, ProjectSections} from "../../containers";
+import { Banner, ContactSections, ProjectSections, SkillSections} from "../../containers";
 import ServicesSection from "../../containers/ServicesSection";
 
 const LandingPage = () => {
@@ -7,9 +7,8 @@ const LandingPage = () => {
     <div className="relative">
       <Navbar />
       <Banner />
-      <ProfileSections/>
       <ServicesSection />
-      {/* <SkillSections/> */}
+      <SkillSections/>
       <ProjectSections/>
       <ContactSections/>
     </div>
