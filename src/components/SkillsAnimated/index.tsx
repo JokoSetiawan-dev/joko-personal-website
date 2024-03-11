@@ -24,6 +24,100 @@ const SkillsAnimated = () => {
         <Marquee
           pauseOnHover
           gradient
+          direction="right"
+          gradientColor="#FBF9F1"
+          gradientWidth={150}
+        >
+          <div>
+            <img
+              src={htmlLogo}
+              alt="HTML Logo"
+              className="w-auto md:h-[40px] h-[30px] md:px-16 sm:px-7 filter grayscale"
+            />
+          </div>
+          <div>
+            <img
+              src={cssLogo}
+              alt="CSS Logo"
+              className="w-auto md:h-[40px] h-[30px] md:px-16 sm:px-7 filter grayscale"
+            />
+          </div>
+          <div>
+            <img
+              src={jsLogo}
+              alt="JavaScript Logo"
+              className="w-auto md:h-[40px] h-[30px] md:px-16 sm:px-7 filter grayscale"
+            />
+          </div>
+          <div>
+            <img
+              src={reactLogo}
+              alt="React Logo"
+              className="w-auto md:h-[40px] h-[30px] md:px-16 sm:px-7 filter grayscale"
+            />
+          </div>
+          <div>
+            <img
+              src={typescriptLogo}
+              alt="TypeScript Logo"
+              className="w-auto md:h-[40px] h-[30px] md:px-16 sm:px-7 filter grayscale"
+            />
+          </div>
+          <div>
+            <img
+              src={tailwindLogo}
+              alt="Tailwind CSS Logo"
+              className="w-auto md:h-[40px] h-[30px] md:px-16 sm:px-7 filter grayscale"
+            />
+          </div>
+          <div>
+            <img
+              src={bootstrapLogo}
+              alt="Bootstrap Logo"
+              className="w-auto md:h-[40px] h-[30px] md:px-16 sm:px-7 filter grayscale"
+            />
+          </div>
+          <div>
+            <img
+              src={nodejsLogo}
+              alt="Node.js Logo"
+              className="w-auto md:h-[40px] h-[30px] md:px-16 sm:px-7 filter grayscale"
+            />
+          </div>
+          <div>
+            <img
+              src={pythonLogo}
+              alt="Python Logo"
+              className="w-auto md:h-[40px] h-[30px] md:px-16 sm:px-7 filter grayscale"
+            />
+          </div>
+          <div>
+            <img
+              src={expressLogo}
+              alt="Express Logo"
+              className="w-auto md:h-[40px] h-[30px] md:px-16 sm:px-7 filter grayscale"
+            />
+          </div>
+          <div>
+            <img
+              src={mysqlLogo}
+              alt="MySQL Logo"
+              className="w-auto md:h-[40px] h-[30px] md:px-16 sm:px-7 filter grayscale"
+            />
+          </div>
+          <div>
+            <img
+              src={mongoLogo}
+              alt="MongoDB Logo"
+              className="w-auto md:h-[40px] h-[30px] md:px-16 sm:px-7 filter grayscale"
+            />
+          </div>
+        </Marquee>
+      </div>
+      <div className="flex flex-row items-center justify-start w-full lg:max-w-[944px]">
+        <Marquee
+          pauseOnHover
+          gradient
           gradientColor="#FBF9F1"
           gradientWidth={150}
         >
