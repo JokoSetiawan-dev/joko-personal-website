@@ -81,17 +81,17 @@ const MessageForm = () => {
       <div className="flex flex-col items-center justify-center gap-11 mt-9">
         <h1>Or visit my social media</h1>
         <div className="flex flex-row gap-9">
-          <a href="">
+          <a href="https://mail.google.com/mail/u/0/?fs=1&to=jokosetiawan.career@gmail.com&su=Subject&body=Message+here&tf=cm">
             <img className="custom-img" src={gmail} alt="" />
           </a>
-          <a href="">
+          <a href="www.linkedin.com/in/jstwan">
             <img className="custom-img" src={linkedin} alt="" />
           </a>
-          <a href="">
+          <a href="https://wa.me/+6281276131433">
             <img className="custom-img" src={whatsapp} alt="" />
           </a>
-          <a className="custom-img" href="">
-            <img src={instagram} alt="" />
+          <a href="https://www.instagram.com/joko._.setiawan?igsh=MW9iaGtkYmtmeHMzNg==">
+            <img className="custom-img" src={instagram} alt="" />
           </a>
         </div>
       </div>
