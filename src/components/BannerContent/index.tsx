@@ -1,4 +1,6 @@
 import hero from "../../assets/images/hero.png";
+import linkedin from "../../assets/images/linkedin.svg"
+import github from "../../assets/images/github-logo.png"
 
 const BannerContent = () => {
   return (
@@ -12,6 +14,14 @@ const BannerContent = () => {
             passionate full-stack engineer turning ideas into elegant,
             functional applications."
           </p>
+          <div className="flex flex-row gap-5 pb-6">
+            <a href="https://github.com/JokoSetiawan-dev">
+              <img className="custom-img" src={github} alt="" />
+            </a>
+            <a href="https://linkedin.com/in/jstwan">
+              <img className="custom-img" src={linkedin} alt="" />
+            </a>
+          </div>
           <a
             href=""
             className="bg-custom-skyblue self-end font-bold md:text-sm text-ssm text-white py-1 px-4 w-36"

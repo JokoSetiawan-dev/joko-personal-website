@@ -123,13 +123,6 @@ const SkillsAnimated = () => {
         >
           <div>
             <img
-              src={htmlLogo}
-              alt="HTML Logo"
-              className="w-auto md:h-[40px] h-[30px] md:px-16 sm:px-7 filter grayscale"
-            />
-          </div>
-          <div>
-            <img
               src={cssLogo}
               alt="CSS Logo"
               className="w-auto md:h-[40px] h-[30px] md:px-16 sm:px-7 filter grayscale"
@@ -139,6 +132,13 @@ const SkillsAnimated = () => {
             <img
               src={jsLogo}
               alt="JavaScript Logo"
+              className="w-auto md:h-[40px] h-[30px] md:px-16 sm:px-7 filter grayscale"
+            />
+          </div>
+          <div>
+            <img
+              src={htmlLogo}
+              alt="HTML Logo"
               className="w-auto md:h-[40px] h-[30px] md:px-16 sm:px-7 filter grayscale"
             />
           </div>

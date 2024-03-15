@@ -7,6 +7,7 @@ import gmail from "../../assets/images/gmail.svg"
 import linkedin from "../../assets/images/linkedin.svg"
 import whatsapp from "../../assets/images/whatsapp.svg"
 import instagram from "../../assets/images/instagram.svg"
+import github from "../../assets/images/github-logo.png"
 
 const MessageForm = () => {
   const form = useRef<HTMLFormElement | null>(null);
@@ -81,10 +82,13 @@ const MessageForm = () => {
       <div className="flex flex-col items-center justify-center gap-11 mt-9">
         <h1>Or visit my social media</h1>
         <div className="flex flex-row gap-9">
+          <a href="https://github.com/JokoSetiawan-dev">
+            <img className="custom-img" src={github} alt="" />
+          </a>
           <a href="https://mail.google.com/mail/u/0/?fs=1&to=jokosetiawan.career@gmail.com&su=Subject&body=Message+here&tf=cm">
             <img className="custom-img" src={gmail} alt="" />
           </a>
-          <a href="www.linkedin.com/in/jstwan">
+          <a href="https://linkedin.com/in/jstwan">
             <img className="custom-img" src={linkedin} alt="" />
           </a>
           <a href="https://wa.me/+6281276131433">

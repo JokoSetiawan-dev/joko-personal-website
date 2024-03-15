@@ -40,16 +40,13 @@ const Navbar = () => {
       <div>
         <ul className="flex flex-row justify-between gap-8 sm:hidden md:flex md:text-sm lg:flex lg:text-base">
           <li>
-            <Link to="#about-me" smooth onClick={handleMenuClick} className="cursor-pointer hover:font-bold">About Me</Link>
-          </li>
-          <li>
             <Link to="#services" smooth onClick={handleMenuClick} className="cursor-pointer hover:font-bold">Services</Link>
           </li>
           <li>
-            <Link to="#skills" smooth onClick={handleMenuClick} className="cursor-pointer hover:font-bold">Skills</Link>
+            <Link to="#skills" smooth onClick={handleMenuClick} className="cursor-pointer hover:font-bold">Tools</Link>
           </li>
           <li>
-            <Link to="#projects" smooth onClick={handleMenuClick} className="cursor-pointer hover:font-bold">Projects</Link>
+            <Link to="#projects" smooth onClick={handleMenuClick} className="cursor-pointer hover:font-bold">Works</Link>
           </li>
           <li>
             <Link to="#contacts" smooth onClick={handleMenuClick} className="cursor-pointer hover:font-bold">Contacts</Link>
@@ -65,16 +62,13 @@ const Navbar = () => {
         </div>
         <ul className='flex flex-col items-center justify-center gap-7 py-7 text-sm text-white'>
           <li>
-            <Link to="#about-me" smooth onClick={handleMenuClick} className="cursor-pointer hover:font-bold ">About Me</Link>
-          </li>
-          <li>
             <Link to="#services" smooth onClick={handleMenuClick} className="cursor-pointer hover:font-bold ">Services</Link>
           </li>
           <li>
-            <Link to="#skills" smooth onClick={handleMenuClick} className="cursor-pointer hover:font-bold ">Skills</Link>
+            <Link to="#skills" smooth onClick={handleMenuClick} className="cursor-pointer hover:font-bold ">Tools</Link>
           </li>
           <li>
-            <Link to="#projects" smooth onClick={handleMenuClick} className="cursor-pointer hover:font-bold ">Projects</Link>
+            <Link to="#projects" smooth onClick={handleMenuClick} className="cursor-pointer hover:font-bold ">Works</Link>
           </li>
           <li>
             <Link to="#contacts" smooth onClick={handleMenuClick} className="cursor-pointer hover:font-bold">Contacts</Link>
