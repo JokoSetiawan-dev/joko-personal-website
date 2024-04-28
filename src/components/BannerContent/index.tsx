@@ -1,8 +1,39 @@
+import React, { useEffect, useRef } from 'react';
 import hero from "../../assets/images/hero.png";
-import linkedin from "../../assets/images/linkedin.svg"
-import github from "../../assets/images/github-logo.png"
+import linkedin from "../../assets/images/linkedin.svg";
+import github from "../../assets/images/github-logo.png";
 
-const BannerContent = () => {
+const BannerContent: React.FC = () => {
+  const heroRef = useRef<HTMLImageElement>(null);
+  const linkedinRef = useRef<HTMLImageElement>(null);
+  const githubRef = useRef<HTMLImageElement>(null);
+
+  useEffect(() => {
+    const lazyLoad = (target: HTMLImageElement | null) => {
+      if (!target) return;
+
+      const io = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target as HTMLImageElement;
+            const src = img.getAttribute('data-src');
+
+            if (src) {
+              img.setAttribute('src', src);
+              observer.unobserve(img);
+            }
+          }
+        });
+      });
+
+      io.observe(target);
+    };
+
+    lazyLoad(heroRef.current);
+    lazyLoad(linkedinRef.current);
+    lazyLoad(githubRef.current);
+  }, []);
+
   return (
     <div className="flex flex-col lg:flex-row xl:gap-14 justify-between h-screen">
       <div className="flex flex-col justify-center items-center h-screen xl:pl-14">
@@ -16,10 +47,22 @@ const BannerContent = () => {
           </p>
           <div className="flex flex-row gap-5 pb-6">
             <a href="https://github.com/JokoSetiawan-dev">
-              <img className="custom-img" src={github} alt="" />
+              <img
+                ref={githubRef}
+                className="custom-img"
+                src={github}
+                data-src={github}
+                alt=""
+              />
             </a>
             <a href="https://linkedin.com/in/jstwan">
-              <img className="custom-img" src={linkedin} alt="" />
+              <img
+                ref={linkedinRef}
+                className="custom-img"
+                src={linkedin}
+                data-src={linkedin}
+                alt=""
+              />
             </a>
           </div>
           <a
@@ -31,7 +74,13 @@ const BannerContent = () => {
         </div>
       </div>
       <div className="self-end w-3/4 md:w-[40%] lg:w-3/4 xl:w-[40%]">
-        <img src={hero} alt="" />
+        <img
+          ref={heroRef}
+          className="lazy"
+          src={hero}
+          data-src={hero}
+          alt=""
+        />
       </div>
     </div>
   );
